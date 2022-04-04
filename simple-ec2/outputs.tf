@@ -1,4 +1,3 @@
-output "aws_instance_public_ip" {
-  value = aws_instance.web.public_ip
-  description = "Public IP of instance"
+output "public_ip" {
+    value = module.servers.aws_instance_public_ip
 }
